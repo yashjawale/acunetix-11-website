@@ -1,11 +1,19 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
+import { Image } from 'astro:assets';
+
+// Images
+import AcunetixLogo from '../assets/acunetix-logo.png'
+import AlarmImage from '../assets/alarm.jpg'
 ---
 
 <Layout title="Acunetix 11.0 | Coming Soon">
-	<main>
-		<h1>Hello!</h1>
+	<main class="flex flex-col items-center justify-center bg-black text-gray-50 h-screen gap-8">
+		<Image width="300" class="w-[170px]" src={AlarmImage} alt="Clock Image"/>
+		<h1 class="font-title text-3xl">Cobweb Of Time</h1>
+		<p class="text-lg uppercase">Coming Soon</p>
+		<Image class="w-[70px] pt-8" src={AcunetixLogo} alt="Acunetix"/>
 	</main>
 </Layout>
 
